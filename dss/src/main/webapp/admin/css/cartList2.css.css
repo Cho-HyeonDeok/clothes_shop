@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding:0;
+    max-height: 100%;
+    }
+
+.Cart_Header1{
+    height: 25px;
+    line-height: 12px;
+    padding: 15px 18px 0 50px;
+    border-bottom: 1px solid #ddd;
+}
+
+.Cart_sub>a:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+.Cart_Header2{
+    clear: both;
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.Cart_Header3 {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.Cart_Texbae{
+    display: table;
+    padding: 50px 30px;
+    display: block;
+    font-size: 1.3em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.Cart_Texbae > span {
+    color: #14aaff;
+    margin-left: 4px;
+}
+
+
+
+.Cart_Cola {
+    padding: 1%;
+    width: 3%;
+    font-size: 0.8em;
+  
+}
+
+.Cart_Colb {
+    padding: 0%;
+    width: 3%;
+    font-size: 0.8em;
+  
+}
+
+.Cart_Colc {
+    padding: 3%;
+    width: 30%;
+    font-size: 0.8em;
+    
+}
+
+.Cart_Cold {
+    width: 8%;
+    font-size: 0.8em;
+    
+}
+
+.Cart_Cole {
+    width: 5%;
+    font-size: 0.8em;
+    
+}
+
+.Cart_Colf {
+    width: 5%;
+    font-size: 0.8em;
+    
+}
+
+.Cart_Colg{
+    padding: 3%;
+    width: 10%;
+    font-size: 0.8em;
+    
+}
+
+.Cart_Colh {
+    padding: 3%;
+    width: 10%;
+    font-size: 0.8em;
+    
+}
+
+.Cart_Coli {
+    padding: 3%;
+    width: 10%;
+    font-size: 0.8em;
+    
+}
+
+.Cart_Content_header{
+    clear: both;
+    min-width: 920px;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.Cart_Product_img{
+    width: 15%;
+    display: flex;
+    padding: 10px 20px;
+    margin-bottom: -20%;
+   
+}
+
+.Cart_Info1{
+    width: 65%;
+    margin-left: 30%;
+    padding: 10px 10px;
+    text-align: left;
+}
+
+.Cart_One{
+    text-decoration-line: line-through;  
+}
+
+.Delete_button{
+    display: inline-block;
+    width: 120px;
+    height: 33px;
+    line-height: 33px;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Cart_All_del{
+    display: inline-block;
+    width: 120px;
+    height: 33px;
+    margin-left: 6px;
+    line-height: 33px;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Cart_All_del_ch{
+    display: inline-block;
+    width: 120px;
+    height: 33px;
+    margin-left: 6px;
+    line-height: 33px;
+    border: 1px solid #d8d8d8;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.Cart_red{
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-bottom: 9px;
+    padding: 10px;
+    border: 1px solid #f00;
+    color: #f00;
+    background: #fff;
+}
+
+.Cart_Text_txt{
+    padding-top: 12px;
+    font-size: 15px;
+}
+
+.Order_btn{
+    width: 30%;
+    text-decoration: none;
+    border: none;
+    padding:15px 100px;
+    background-color: black;
+    color: white;
+    margin-left: 40%;
+    transform: all 0.5s;
+}
+.Order_btn:hover{
+    color: white;
+    background-color:#0078ff;
+}
+
+.when{
+    border: 1px solid lightgray;
+}
+
+.Cart_D1{
+    height: 400px;
+    text-align: center;
+    border-bottom: 1px solid #f5f5f5;
+}
+
+.Cart_D1 > span{
+    display: inline-block;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #777777;
+    line-height: 21px;
+    vertical-align: middle;
+    margin-top: 10%;
+}
+
+.Cart_Discount {
+    margin-top: 3%;
+    margin-left: 35%;
+}
+
+.Cart_Total{
+    padding-top: 40px;
+
+}
+
+.Total_title{
+    margin-left: 1%;
+    display: inline-block;
+    padding: 10px 0 17px;
+    line-height: 16px;
+    font-weight: bold;
+}
+
+.Cart_Discount_method{
+    display: flex;
+    margin-left: 3%;
+    margin-right: 10%;
+}
+
+.Cart_Discount_m{
+    padding: 15px 10px;
+    width: 70%;
+    border: 0.01px solid #ccc;
+}
+
+.Cart_Discount_m > .Cart_Black{
+    
+    color: #777777;
+}
+
+.Cart_Discount_method1{
+    width: 10%;
+    padding: 15px 10px;
+    border: 0.01px solid #ccc;
+    border-bottom: none;
+}
+
+.Cart_Reflect{
+    margin-left: 3%;
+}
+
+.Cart_Final{
+    margin-left: 40%;
+    display: flex;
+}
+
+.Cart_Final > dd{
+    display: flex;
+}
+
+.Cart_Final_a{
+    margin-right: 12px;
+    font-size: 15px;
+    color: #777;
+}
+
+.Cart_Final_price {
+    font-weight: bold;
+}
+
+.Cart_Final_ic{
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+.Cart_Final_price_save{
+    margin-left: 5px;
+    font-size: 15px;
+    color: #ff0000;
+}
+

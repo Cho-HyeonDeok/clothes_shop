@@ -1,0 +1,256 @@
+
+.qna_main{
+    width: 80%;
+}
+.qna_title{
+    border: 1px solid #ddd;
+    width: 100%;
+    border-bottom: none;
+}
+.qna_title_font{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+}
+.qna_sub{
+    width: 100%;
+    display: flex;
+    border: 1px solid #ddd;
+}
+.qna_sub_qnasubqna{
+    width: 33%;
+    padding: 15px;
+    background-color: #f0f0f0;
+}
+.qna_sub_faqsubfaq{
+    width: 33%;
+    padding: 15px;
+
+}
+.qna_sub_teltime{
+    width: 33%;
+    padding: 15px;
+}
+.qna_sub_qnasubqna{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    width: 33%;
+}
+.qna_sub_tel{
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+.qna_sub_time{
+    font-size: 6px;
+    color: #999;
+}
+.qna_sub_qna{
+    font-size: 12px;
+    font-weight: 600;
+}
+.qna_sub_subqna{
+    font-size: 6px;
+    color: #999;
+}
+.qna_sub_faq{
+    font-size: 12px;
+    font-weight: 600;
+}
+.qna_sub_subfaq{
+    font-size: 6px;
+    color: #999;
+}
+.qna_main_container{
+    border: 1px solid #ddd;
+    width: 100%;
+    border-top: none;
+}
+.qna_main_title{
+    padding: 10px;
+}
+.qna_main_title_font{
+    font-size: 12px;
+    font-weight: 600;
+}
+.li_div{
+    font-size: 10px;
+    padding: 10px;
+   
+}
+
+.li_red{
+    color: red;
+}
+
+.qna_under_form{
+    
+    width: 100%;
+    
+}
+.qba_under_inputbest_form{
+    display: flex;
+    width: 100%;    
+}
+.qna_under_input_form{
+    width: 45%;
+}
+.qna_under_best_form{
+    width: 45%;
+    margin-left: 10%;
+}
+    
+.qna_under_input_title{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+.qna_under_best_title{
+    font-size: 12px;
+    font-weight: 600;
+    padding: 10px;
+    border-bottom: 1px solid black; 
+}
+.qna_under_input_subform{
+    width: 100%;
+}
+.qna_under_input_select_form{
+    display: flex;
+}
+.qna_under_input_select_title{
+    font-size: 8px;
+    padding: 10px;
+    width: 20%;
+}
+.qna_under_input_select_buttonlist_form{
+    width: 100%;
+}
+.qna_under_input_sixbutton_top{
+    display: flex;
+    width: 100%;
+}
+.qna_under_input_sixbutton_top_text{
+    width: 33%;
+    font-size: 8px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    margin-left: 3px;
+    text-align: center;
+    border-radius: 3px;
+    color: #777;
+    font-weight: 500;
+
+}
+.qna_under_input_sixbutton_bottom{
+    display: flex;
+    width: 100%;
+}
+.qna_under_input_sixbutton_bottom_text{
+    width: 33%;
+    font-size: 8px;
+    padding: 10px;
+    background-color: #F5F5F5;
+    margin-left: 3px;
+    text-align: center;
+    border-radius: 3px;
+    color: #777;
+    margin-top: 5px;
+    font-weight: 500;
+}
+.qna_under_input_list_form{
+    width: 100%;
+}
+.qna_under_input_list{
+    width: 100%;
+    margin-top: 3px;
+}
+.qna_under_input_select_buttonlist_form{
+    padding: 10px;
+}
+.qna_under_input_text_titlebox{
+    display: flex;
+}
+.qna_under_input_textbox_font{
+    font-size: 8px;
+    padding: 10px;
+    width: 20%;
+
+}
+.qna_under_input_image_main{
+    display: flex;
+}
+.qna_under_input_image_title{
+    font-size: 8px;
+    padding: 10px;
+    width: 20%;
+}
+.qna_under_button_form{
+    width: 100%;
+    padding: 10px;
+
+}
+.qna_under_button_box{
+    display: flex;
+    margin: 0 auto;
+    width: 20%;
+}
+.qna_user_button1{
+    
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+    font-size: 8px;
+    width: 50%;
+}
+.qna_user_button2{
+    
+    text-align: center;
+    margin-left: 3px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 8px;
+    width: 50%;
+    
+}
+
+
+.form_radio_btn {
+    width: 33%;
+    font-size: 8px;
+    
+    padding: 3px;
+    
+}
+.form_radio_btn input[type=radio] {
+    display: none;
+}
+.form_radio_btn label {
+    display: block;
+    
+       margin: 0 auto;
+    text-align: center;
+    height: -webkit-fill-available;
+    line-height: 30px;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+ 
+/* Hover */
+.form_radio_btn label:hover {
+    color: #666;
+}
+ 
+/* Disabled */
+.form_radio_btn input[type=radio] + label {
+    background: #F9FAFC;
+    color: #666;
+}

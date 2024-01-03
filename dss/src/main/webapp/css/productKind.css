@@ -1,0 +1,75 @@
+@media screen and (min-width: 1281px) {
+.view_all_product_container_main{
+    border: 1px solid black;
+    padding: 20px 20px;
+	width:100%;
+}
+.view_all_product_container{
+    width:100%;
+    border: 1px solid #ddd;
+    
+}
+.view_all_product_top{
+    display: flex;
+    padding:10px 10px;
+    width:100%;
+    justify-content: start;
+}
+.view_all_font{
+    font-size: 12px;
+    margin-right: 2%;
+    color: #AAAAAA;
+    cursor: pointer;
+}
+.view_all_font:hover{
+    color: black;
+    text-decoration: underline;
+    font-weight: 1000;
+}
+.view_all_font:focus{
+    color: black;
+    text-decoration: underline;
+}
+.view_all_product_content{
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    border: 1px solid blue;
+    /* width: 100%; */
+    /* margin: 0 auto; */
+    width: 100%;
+    /* padding: 10px 10px; */
+    display: flex;
+    align-items: center;
+
+}
+.view_all_product_content_img_div{
+    width:19.85%;
+    border: 1px solid #ddd;
+ 
+}
+.view_all_product_content_div{
+    display: flex; /* Flexbox를 활용하여 내부 요소를 가운데 정렬 */
+    flex-direction: column; /* 내부 요소를 세로로 정렬 */
+    align-items: center; /* 내부 요소를 수평으로 가운데 정렬 */
+  
+    padding: 50px 0px;
+    cursor: pointer;
+    
+}
+.view_all_product_content_img_div:hover{
+    background-color: #f3f3f3;
+}
+
+
+.view_all_product_content_font{
+    font-size:12px;
+    text-align: start;
+    font-weight: 700;
+}
+.view_all_product_content_font2{
+    font-size:12px;
+    text-align: start;
+    font-weight: 500;
+}
+}

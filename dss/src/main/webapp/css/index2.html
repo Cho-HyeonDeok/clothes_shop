@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="aside.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="main_header_topLogo_container">
+        <div class="main_header_topLogo">
+          <div class="main_topLogo">
+            <div class="main_topLogo_slider">
+              <img src="img/logo1.jpg" alt="" />
+            </div>
+            <div class="main_topLogo_slider">
+              <img src="img/logo2.jpg" alt="" />
+            </div>
+            <div class="main_topLogo_slider">
+              <img src="img/logo3.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 헤더 -->
+      <div class="main_header_container">
+        <!-- 로고 -->
+        <div class="main_header_logo">
+          <img onclick="location.href='index.html'" src="img/logo.png" alt="" />
+        </div>
+        <!-- 검색창 -->
+        <div class="main_header_Search">
+          <div class="search__bar">
+            <form action="">
+              <input
+                type="text"
+                placeholder="우먼 백&슈즈 최대 40% 할인"
+                onfocus="this.placeholder=''"
+              />
+            </form>
+          </div>
+  
+          <div class="link__search">
+            <i class="fa-solid fa-magnifying-glass" style="color: #fff"></i>
+          </div>
+        </div>
+        <!-- 랭킹창 -->
+  
+        <div class="main_header_Ranking">
+          <ul>
+            <li>
+              <span class="main_header_ranking_count">1등 : 후드티</span>
+              <span>▼ 1</span>
+            </li>
+            <li>
+              <span class="main_header_ranking_count">2등 : 후드집업</span>
+              <span>▼ 1</span>
+            </li>
+            <li>
+              <span class="main_header_ranking_count">3등 : 맨투맨</span>
+              <span>▼ 1</span>
+            </li>
+            <li>
+              <span class="main_header_ranking_count">4등 : 바람막이</span>
+              <span>▼ 1</span>
+            </li>
+            <li>
+              <span class="main_header_ranking_count">5등 : 반팔</span>
+              <span>▼ 1</span>
+            </li>
+          </ul>
+        </div>
+  
+        <!-- 헤더 컨텐츠 -->
+        <div class="main_header_contents_div">
+          <div class="main_header_content">랭킹</div>
+          <div class="main_header_content">코디</div>
+          <div class="main_header_content">세일</div>
+          <div class="main_header_content">이벤트</div>
+          <div class="main_header_content">브랜드</div>
+        </div>
+      </div>
+      <!-- 개인정보 -->
+      <c:choose>
+         <c:when test="${empty loginUser}">
+     <div class="main_header_info">
+        <div class="main_header_info_detail main_header_name" onclick="location.href='login.jsp'">로그인</div>
+           
+  
+      </div>    
+         </c:when>
+         <c:otherwise>
+          <div class="main_header_info">
+        <div class="main_header_info_detail main_header_name">${loginUser.name}</div>
+        <div class="main_header_info_detail main_header_profile">마이페이지</div>
+        <div class="main_header_bag">
+          <div class="main_header_bag_hover">장바구니</div>
+          <div><span class="main_header_bag_cnt">1</span></div>
+        </div>
+        <div class="main_header_info_detail main_header_login" onclick="location.href='logout.do'">로그아웃</div>
+      </div>    
+         </c:otherwise>
+      </c:choose>
+     
+  
+      <script src="script/header.js"></script>
+      <div style="display: flex;">
+    <div class="aside_container">
+        <div class="aside_title_div">
+            <div class="aside_title_left">
+                <!-- <c:when> -->
+                <span class="aside_title_span">품목</span>
+            </div>
+            <div class="aside_title_right">
+                <span class="aside_title_span">브랜드</span>
+            </div>
+        </div>
+        <div class="aside_content_div">
+            <div class="aside_content_best" style="margin-top: 1%;">
+                <div class="aside_content_span" >
+                <span class="aside_font">인기</span><span class="aside_font_sub">Best</span>
+                </div>
+            </div>
+            <div class="aside_content_best">
+                <div class="aside_content_span">
+                <span class="aside_font">상의</span><span class="aside_font_sub">Top</span>
+                </div>
+            </div>
+            <div class="aside_content_best">
+                <div class="aside_content_span">
+                <span class="aside_font">하의</span><span class="aside_font_sub">Pants</span>
+                </div>
+            </div>
+            <div class="aside_content_best">
+                <div class="aside_content_span">
+                <span class="aside_font">아우터</span><span class="aside_font_sub">Outer</span>
+                </div>
+            </div>
+            <div class="aside_content_best">
+                <div class="aside_content_span">
+                <span class="aside_font">신발</span><span class="aside_font_sub">Shoes</span>
+                </div>
+            </div>
+        </div>
+        <div class="aside_content_footer">
+            <div class="aside_content_footer_info">
+                <i class="fa-solid fa-phone"></i>
+                <span>1544-7199</span>
+            </div>
+            <div class="">
+                <p class="aside_font_footer">오전9시~오후6시 운영 / 토,일,휴일 휴무 </p>
+                <p class="aside_font_footer">- 전화 전 <span>자주 묻는 질문</span>을 확인하세요.</p>
+                <p class="aside_font_footer">- <span>1:1문의</span>를 통해서도 상담이 가능합니다.</p>
+                <p class="aside_font_footer">- 상품 문의는 각 상품 Q&A를 이용하세요.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <!-- section 제목 -->
+        <div class="section_title_div">
+          <div class="section_title_content">
+            <span class="section_title">실시간 랭킹</span>
+            <span class="section_title_all">전체</span>
+          </div>
+        </div>
+        <!-- section 컨텐츠 div -->
+        <div class="section_content_div">
+          <!-- section 카테고리 -->
+          <div class="section_categori_div">
+            <div class="section_categori_title">
+              <span>상품</span>
+            </div>
+            <ul class="section_categori_ul">
+              <li>🔥new</li>
+              <li>전체</li>
+              <li>상의</li>
+              <li>아우터</li>
+              <li>바지</li>
+              <li>원피스</li>
+              <li>가방</li>
+              <li>신발</li>
+            </ul>
+          </div>
+          <!-- section 정보 -->
+          <div class="section_info_div">
+            <form>
+              <div class="section_info_container">
+                <div class="section_info_product_div">
+                  <div class="section_info_ranking">1위</div>
+                  <div class="section_info_img">
+                    <img
+                      src="img/product1.jpg"
+                      style="width: 146px; height: 175px"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="section_info_title"><span>드로우핏</span></div>
+                  <div class="section_info_product_info">
+                    <span>웨이브 블록 울 해링턴 자켓...</span>
+                  </div>
+                  <div class="section_info_product_price">
+                    <span>49,500원</span>
+                  </div>
+                </div>
+                <div class="section_info_product_div">
+                  <div class="section_info_ranking">1위</div>
+                  <div class="section_info_img">
+                    <img
+                      src="img/product1.jpg"
+                      style="width: 146px; height: 175px"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="section_info_title"><span>드로우핏</span></div>
+                  <div class="section_info_product_info">
+                    <span>웨이브 블록 울 해링턴 자켓...</span>
+                  </div>
+                  <div class="section_info_product_price">
+                    <span>49,500원</span>
+                  </div>
+                </div>
+                <div class="section_info_product_div">
+                  <div class="section_info_ranking">2위</div>
+                  <div class="section_info_img">
+                    <img
+                      src="img/product1.jpg"
+                      style="width: 146px; height: 175px"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="section_info_title"><span>드로우핏</span></div>
+                  <div class="section_info_product_info">
+                    <span>웨이브 블록 울 해링턴 자켓...</span>
+                  </div>
+                  <div class="section_info_product_price">
+                    <span>49,500원</span>
+                  </div>
+                </div>
+                <div class="section_info_product_div">
+                  <div class="section_info_ranking">3위</div>
+                  <div class="section_info_img">
+                    <img
+                      src="img/product1.jpg"
+                      style="width: 146px; height: 175px"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="section_info_title"><span>드로우핏</span></div>
+                  <div class="section_info_product_info">
+                    <span>웨이브 블록 울 해링턴 자켓...</span>
+                  </div>
+                  <div class="section_info_product_price">
+                    <span>49,500원</span>
+                  </div>
+                </div>
+
+                <div class="section_info_product_div">
+                  <div class="section_info_ranking">4위</div>
+                  <div class="section_info_img">
+                    <img
+                      src="img/product1.jpg"
+                      style="width: 146px; height: 175px"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="section_info_title"><span>드로우핏</span></div>
+                  <div class="section_info_product_info">
+                    <span>웨이브 블록 울 해링턴 자켓...</span>
+                  </div>
+                  <div class="section_info_product_price">
+                    <span>49,500원</span>
+                  </div>
+                </div>
+                <div class="section_info_product_div">
+                  <div class="section_info_ranking">4위</div>
+                  <div class="section_info_img">
+                    <img
+                      src="img/product1.jpg"
+                      style="width: 146px; height: 175px"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="section_info_title"><span>드로우핏</span></div>
+                  <div class="section_info_product_info">
+                    <span>웨이브 블록 울 해링턴 자켓...</span>
+                  </div>
+                  <div class="section_info_product_price">
+                    <span>49,500원</span>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script/header.js"></script>
+    <script src="script/main.js"></script>
+
+    <div class="footer_container">
+        <div class="footer_div1"><p>무신사 편집팀</p><p>서웉특별시 강남구 신사동 640-2</p><p>로빈명품관 지하1층, 무신사 편집팀</p><P class="font_red">(무신사 스토어 반송지 아님, 해당주소 반송불가)</P></div>
+        <div class="footer_div2"><p>무신사 스토어</p><p>(17759) 경기도 평택시 신장로 55 CJ대한통운 평</p><p>택합정집배점 내 무신사 물류센터</p><P class="font_blue">(무신사 스토어 자체 배송 상품 물류센터)</P>
+        <P class="font_blue">(배송센터 직접 물건 수령 불가)</P></div>
+        <div class="footer_div3"><p>고객센터</p><span>1544 - 7199 (유료)</span><span> | </span><span>1:1 문의</span><span> | </span><span>이메일</span>
+            <p>평일 오전 9시 - 오후 6시</p>
+            <p>(상품 문의는 각 상품 페이지에서 [문의하기] 등록)</p>
+            <p onclick="" class="footer_button"><span class="font_blue">고객센터</span> 바로가기</p>
+        </div>
+       
+    </div>
+
+    <div class="footer_icon_div"> 
+            
+        <div class="footer_icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4118_281975)"><path fill-rule="evenodd" clip-rule="evenodd" d="M24 0C37.2548 0 48 10.7452 48 24C48 35.9794 39.2236 45.908 27.75 47.7084V30.9375H33.3422L34.4062 24H27.75V19.4981C27.75 17.6002 28.68 15.75 31.6613 15.75H34.6875V9.84375C34.6875 9.84375 31.9411 9.375 29.3152 9.375C23.8331 9.375 20.25 12.6975 20.25 18.7125V24H14.1562V30.9375H20.25V47.7084C8.77641 45.908 0 35.9789 0 24C0 10.7452 10.7452 0 24 0Z" fill="#4F4F4F"></path></g><defs><clipPath id="clip0_4118_281975"><rect width="48" height="48" fill="white"></rect></clipPath></defs></svg></div>
+        <div class="footer_icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.0602 0.167851C11.5066 0.288331 9.76275 0.695853 8.23827 1.29489C6.66052 1.90978 5.32324 2.7349 3.99268 4.07026C2.66212 5.40563 1.84276 6.74387 1.2322 8.32404C0.641319 9.85188 0.240999 11.5972 0.128199 14.1522C0.0153989 16.7073 -0.00956108 17.5286 0.00291891 24.046C0.0153989 30.5635 0.0441989 31.3804 0.168039 33.9408C0.289959 36.4939 0.696039 38.2373 1.29508 39.7622C1.91092 41.34 2.73508 42.6768 4.07092 44.0078C5.40676 45.3389 6.74404 46.1563 8.32803 46.7679C9.85443 47.3578 11.6002 47.76 14.1548 47.8719C16.7093 47.9837 17.5316 48.0096 24.0471 47.9971C30.5626 47.9847 31.3829 47.9559 33.9427 47.8344C36.5026 47.713 38.2368 47.304 39.7623 46.7079C41.34 46.0906 42.6778 45.2678 44.0079 43.9315C45.3379 42.5952 46.1568 41.256 46.7669 39.6749C47.3583 38.1485 47.76 36.4027 47.8709 33.8501C47.9827 31.2883 48.0091 30.4704 47.9967 23.9539C47.9842 17.4374 47.9549 16.6204 47.8335 14.061C47.712 11.5017 47.3055 9.76356 46.7069 8.23764C46.0901 6.65987 45.2669 5.32403 43.9315 3.99202C42.5962 2.66002 41.256 1.84162 39.6754 1.23297C38.148 0.642093 36.4032 0.239371 33.8487 0.128971C31.2941 0.0185703 30.4719 -0.00974977 23.9539 0.00273028C17.436 0.0152103 16.62 0.0430504 14.0602 0.167851ZM14.3405 43.5542C12.0005 43.4525 10.73 43.0637 9.88323 42.7382C8.76195 42.3062 7.96323 41.784 7.1194 40.9483C6.27556 40.1126 5.75716 39.311 5.3194 38.1921C4.9906 37.3454 4.5946 36.0763 4.48516 33.7363C4.36612 31.2072 4.34116 30.4478 4.32724 24.0403C4.31332 17.6327 4.3378 16.8743 4.44868 14.3442C4.54852 12.0061 4.93972 10.7341 5.26468 9.88789C5.69668 8.76516 6.217 7.96788 7.05459 7.12452C7.89219 6.28115 8.69139 5.76179 9.81123 5.32403C10.657 4.99379 11.9261 4.60115 14.2652 4.48979C16.7962 4.36979 17.5546 4.34579 23.9611 4.33187C30.3677 4.31795 31.128 4.34195 33.66 4.45331C35.9981 4.55507 37.2706 4.94243 38.1159 5.26931C39.2376 5.70131 40.0359 6.22019 40.8792 7.05924C41.7226 7.89828 42.2424 8.6946 42.6802 9.81684C43.0109 10.6602 43.4035 11.9289 43.5139 14.2693C43.6344 16.8004 43.6618 17.5593 43.6733 23.9654C43.6848 30.3715 43.6623 31.1323 43.5514 33.6614C43.4491 36.0014 43.0613 37.2725 42.7354 38.1201C42.3034 39.2409 41.7826 40.0401 40.9445 40.883C40.1064 41.7259 39.3082 42.2453 38.1879 42.683C37.3431 43.0128 36.0725 43.4064 33.7354 43.5178C31.2043 43.6368 30.4459 43.6618 24.037 43.6757C17.628 43.6896 16.872 43.6637 14.341 43.5542M33.9058 11.1728C33.9067 11.7425 34.0766 12.2991 34.3939 12.7722C34.7112 13.2453 35.1616 13.6137 35.6883 13.8308C36.215 14.0478 36.7942 14.1038 37.3527 13.9917C37.9112 13.8796 38.4239 13.6043 38.826 13.2008C39.228 12.7972 39.5014 12.2835 39.6115 11.7246C39.7216 11.1657 39.6634 10.5867 39.4444 10.0608C39.2254 9.53494 38.8554 9.08583 38.3811 8.77028C37.9069 8.45472 37.3497 8.2869 36.78 8.28804C36.0164 8.28957 35.2846 8.59433 34.7456 9.13531C34.2066 9.67629 33.9045 10.4092 33.9058 11.1728ZM11.677 24.0239C11.6904 30.8304 17.2181 36.3355 24.0231 36.3225C30.828 36.3096 36.337 30.7824 36.324 23.9759C36.3111 17.1695 30.7819 11.6629 23.976 11.6764C17.1701 11.6898 11.664 17.2185 11.677 24.0239ZM15.9999 24.0153C15.9967 22.433 16.4629 20.8853 17.3393 19.568C18.2158 18.2506 19.4632 17.2227 20.9239 16.6143C22.3845 16.0059 23.9927 15.8443 25.5452 16.1499C27.0977 16.4555 28.5247 17.2147 29.6458 18.3313C30.7668 19.4479 31.5316 20.8719 31.8433 22.4232C32.1551 23.9744 31.9999 25.5833 31.3972 27.0464C30.7946 28.5094 29.7717 29.7609 28.4578 30.6426C27.144 31.5242 25.5981 31.9965 24.0159 31.9996C22.9652 32.0019 21.9245 31.7971 20.953 31.397C19.9815 30.9969 19.0984 30.4094 18.354 29.6679C17.6096 28.9265 17.0186 28.0457 16.6146 27.0758C16.2107 26.1059 16.0018 25.0659 15.9999 24.0153Z" fill="#4F4F4F"></path></svg></div>
+        <div class="footer_icon"><svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_4118_282268)"><path d="M46.9959 12.4802C46.445 10.402 44.8168 8.76565 42.7522 8.20929C39.0104 7.2002 23.9995 7.2002 23.9995 7.2002C23.9995 7.2002 8.9886 7.2002 5.24678 8.20929C3.18224 8.76565 1.55406 10.402 1.00315 12.4802C-0.000488281 16.2493 -0.000488281 24.1093 -0.000488281 24.1093C-0.000488281 24.1093 -0.000488281 31.9693 1.00315 35.7384C1.55406 37.8166 3.18224 39.4529 5.24678 40.0093C8.99133 41.0184 23.9995 41.0184 23.9995 41.0184C23.9995 41.0184 39.0104 41.0184 42.7522 40.0093C44.8168 39.4529 46.445 37.8166 46.9959 35.7384C47.9995 31.972 47.9995 24.1093 47.9995 24.1093C47.9995 24.1093 47.9995 16.2493 46.9959 12.4802ZM19.0904 31.2466V16.972L31.6359 24.1093L19.0904 31.2466Z" fill="#4F4F4F"></path></g><defs><clipPath id="clip0_4118_282268"><rect width="48" height="48" fill="white" transform="translate(-0.000488281)"></rect></clipPath></defs></svg></div>
+    </div>
+    <div class="footer_content">
+        <p>COPYRIGHT (C) MUSINSA ALL RIGHTS RESERVED.</p>
+        <p class="font_gray">무신사닷컴 내 매거진, 스트리트스냅, 스토어 등 무신사 자체 생성 콘텐츠는 무신사닷컴 및 무신사 계약업체에 저작권이 있습니다.</p>
+        <p class="font_gray">이러한 콘텐츠는 출처를 밝히고(무신사닷컴 표기 및 www.musinsa.com 링크 포함 필수) 비상업적인 용도에서만 활용하실 수 있습니다.<span class="font_black">자세히보기</span></p>
+        <p class="font_gray">커뮤니티 및 중고장터, 댓글 등 무신사 회원이 올린 이미지가 저작권에 위배될 경우신고하시면 검토 후 <span class="font_black">삭제</span>하겠습니다.</p>
+    </div>
+    <div class="footer_last">
+        FASHION WEB MAGAZINE / LIFE STYLE SELECT SHOP WWW.DAESINSA.COM
+    </div>
+</body>
+</html>

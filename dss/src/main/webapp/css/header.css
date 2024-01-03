@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+.main_header_topLogo_container {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.main_header_topLogo {
+  width: 100%;
+	
+  transform: translateX(0px);
+  transition: all 2s;
+}
+.main_topLogo {
+  display: flex;
+}
+.main_topLogo_slider {
+  width: 2600px;
+}
+.main_topLogo_slider > img {
+  width: 2600px;
+  height: 70px;
+}
+
+/* 헤더 */
+.main_header_container {
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+.main_header_logo > img {
+  width: 123px;
+  height: 80%;
+  cursor: pointer;
+}
+.main_header_logo {
+  text-align: center;
+  margin-left: 5%;
+}
+/* 검색 */
+.main_header_Search {
+  display: flex;
+  padding: 2vh 0px;
+  margin-left: 2%;
+}
+.search__bar > form > input {
+  height: 25px;
+  width: 130px;
+  border: none;
+  font-size: 5px;
+  padding-right: 15px;
+  text-align: start;
+}
+.search__bar > form > input:focus {
+  outline: none;
+}
+.link__search {
+  padding: 5px 5px;
+  text-align: center;
+}
+.link__search > i {
+  cursor: pointer;
+}
+
+/* 랭킹 */
+.main_header_Ranking {
+  width: 30%;
+  height: 100%;
+  margin-left: 1%;
+  transform: translateY(0px);
+  transition: all 2s;
+  /* overflow: hidden; */
+}
+.main_header_Ranking > ul {
+  position: absolute;
+  top: -10px;
+
+  height: 100%;
+  width: 100%;
+  color: white;
+}
+.main_header_Ranking > ul > li > {
+  font-size: 13px;
+  display: none;
+  width: 100%;
+  padding: 0px 0px;
+}
+
+.main_header_Ranking > ul > li > span {
+  font-weight: 700;
+  font-size: 10px;
+}
+.main_header_ranking_count {
+  margin-right: 50%;
+}
+.main_header_contents_div {
+  display: flex;
+  color: white;
+  width: 30%;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+/* 개인정보 부분 */
+.main_header_info {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+
+  font-size: 10px;
+
+  height: 8vh;
+  align-items: center;
+  border-bottom: 1px solid rgba(142, 140, 140, 0.3);
+}
+.main_header_info_detail {
+  margin-right: 3%;
+  margin-left: 5%;
+  cursor: pointer;
+}
+.main_header_name {
+  font-weight: 700;
+}
+.main_header_bag_cnt {
+  background-color: #0078ff;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 50%;
+  text-decoration: none;
+  margin-left: 20%;
+}
+.main_header_bag {
+  display: flex;
+  cursor: pointer;
+}
+.main_header_bag_hover:hover {
+  text-decoration: underline;
+}
+.main_header_info_detail:hover {
+  text-decoration: underline;
+}
